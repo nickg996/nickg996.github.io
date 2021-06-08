@@ -1,0 +1,139 @@
+:root {
+  --white: #f3f3f3;
+  --darkblue: #1b1b32;
+  --darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --green: #37af65;
+  --dark-green: #006400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+  background: var(--darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+body {
+  color: var(--white);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+div {
+  display: block;
+}
+
+form {
+  background-color: var(--darkblue-alpha);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+@media (min-width: 480px) form {
+  padding: 3rem;
+}
+
+header {
+  text-align: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+input,
+select {
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+p {
+  padding: 0.25rem;
+}
+
+textarea {
+  margin: 2rem auto;
+  min-height: 10rem;
+  resize: vertical;
+  width: 100%;
+}
+
+.container {
+  padding-bottom: 100px;
+  max-width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+.checkbox-input,
+.input-radio {
+  min-height: 2rem;
+  min-width: 2rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.form-group {
+  margin: 1rem;
+}
+
+.form-ctrl {
+  width: 100%;
+}
+
+.submit-button {
+  background-color: green;
+  border: none;
+  color: var(--white);
+  font-variant: small-caps;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: var(--dark-green);
+}
+
+#description {
+  font-style: italic;
+}
+
+/* For mobile */
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* For desktop */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}

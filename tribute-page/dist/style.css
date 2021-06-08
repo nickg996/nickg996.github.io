@@ -1,0 +1,60 @@
+body {
+  font: 1rem "Roboto", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+blockquote {
+  font-style: italic;
+  line-height: 2;
+  max-width: 450px;
+  margin: 0 auto 50px auto;
+}
+
+footer {
+  margin-bottom: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+h2 {
+  padding: 30px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
+ul {
+  line-height: 1.5;
+  text-align: left;
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+}
+
+li {
+  margin: 16px 0;
+}
+
+#img-caption {
+  padding: 15px;
+}
+
+#img-div {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+#main {
+  background: #eee;
+  display: block;
+  margin: 30px 8px;
+  padding: 15px;
+}
+
+#title {
+  font-size: 3rem;
+}
