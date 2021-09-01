@@ -130,7 +130,7 @@ nav a:hover {
 }
 
 #projects-background {
-  background-color: silver;
+  background-color: rgba(0, 0, 0, 0.705);
   padding: 5rem 0;
 }
 
