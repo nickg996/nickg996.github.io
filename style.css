@@ -101,7 +101,7 @@ nav a:hover {
 }
 
 .fade-in {
-  animation: fadeIn ease 2s;
+  animation: fadeIn ease 1s;
 }
 
 @keyframes fadeIn {
