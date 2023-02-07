@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+
+:root {
+  --gray: #303841;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font: 2rem "Nanum Gothic", sans-serif;
+  text-align: center;
+}
+
+div#welcome-section,
+div#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  font-size: 7rem;
+  padding: 2rem;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+img:hover {
+  box-shadow: 1px 2px 5px 3px rgba(255, 255, 255, 0.582);
+}
+
+nav {
+  font-size: 2rem;
+  border-bottom: 1px solid gray;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  margin: 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: var(--gray);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  border: 1px solid white;
+}
+
+.my-face {
+  border-radius: 50%;
+  width: 40rem;
+  height: 40rem;
+}
+
+.caption {
+  background-color: var(--gray);
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.prof-buttons:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 5rem;
+}
+
+.contact-details a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 2rem;
+}
+
+.fade-in {
+  animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#project-caption {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 auto 8rem auto;
+}
+
+/* Page sectioning */
+
+#contact {
+  background-color: var(--gray);
+}
+
+#welcome-section {
+  background-color: var(--gray);
+}
+
+#projects-background {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 5rem 0;
+}
+
+/* Grid styling for projects */
+
+#projects {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile-friendly queries */
+
+@media (max-width: 1100px) {
+  #projects {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    padding: 4rem;
+  }
+
+  nav {
+    font-size: 3rem;
+    padding: 0;
+    justify-content: center;
+  }
+
+  body {
+    font-size: 3rem;
+  }
+}
