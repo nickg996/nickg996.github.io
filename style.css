@@ -35,6 +35,7 @@ h1 {
 img {
   height: auto;
   width: 100%;
+  
 }
 
 img:hover {
@@ -144,6 +145,10 @@ nav a:hover {
   grid-gap: 4rem;
   justify-content: center;
   align-items: center;
+}
+
+#codepen {
+  max-height: 100%;
 }
 
 /* Mobile-friendly queries */

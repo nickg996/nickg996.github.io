@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+div {
+    width: 100%;
+    display: block;
+}
+
+#container {
+    background-image: url(messagebackground.jpg);
+    background-repeat: no-repeat;
+    max-width: 900px;
+    height: 200px;
+    margin: auto;
+}
+
+#generator {
+    display: block;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    background-color: #181a1b;
+    border-color: #736b5e;
+    color: white;
+}
+
+#generator:hover {
+    cursor: pointer;
+}
+
+
+#message {
+    color: white;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    position: relative;
+    max-width: 250px;
+    top: 50px;
+    right: 100px;
+}
+
+audio {
+    position: absolute;
+    display: inline-block;
+    margin: auto;
+    left: 325px;
+    top: 300px;
+}
