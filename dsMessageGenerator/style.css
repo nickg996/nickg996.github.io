@@ -14,9 +14,11 @@ div {
 #container {
     background-image: url(messagebackground.jpg);
     background-repeat: no-repeat;
-    max-width: 900px;
+    width: 930px;
     height: 200px;
-    margin: auto;
+    margin: 0 auto;
+    padding-left: 200px;
+    padding-top: 30px;
 }
 
 #generator {
@@ -37,12 +39,11 @@ div {
 
 #message {
     color: white;
-    margin: auto;
+    margin: 0;
     padding: 0;
     display: flex;
     justify-content: left;
     position: relative;
-    max-width: 250px;
     top: 50px;
     right: 100px;
 }
